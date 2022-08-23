@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+nav li.contact, h1, h2, h3, span.name, article.full span.learn-more {
+    font-family: "Fraunces", serif;
+}
+p, li, span.occupation {
+    font-family: "Barlow", sans-serif;
+}
+p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    position: relative;
+    background-color: white;
+}
+header {
+    grid-column: span 2;
+    background-size: 100%;
+    position: relative;
+}
+img.logo {
+    position: absolute;
+    padding: 3.7%;
+    width: 13%;
+}
+header nav {
+    position: absolute;
+    right: 0.1%;
+    padding: 2%;
+}
+ul {
+    list-style-type: none;
+}
+header nav li {
+    color: white;
+    display: inline-block;
+    padding: 2em;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+nav li.contact {
+    color: hsl(212, 27%, 19%);
+    background-color: white;
+    border-radius: 40px;
+    padding: 20px 33px;
+    margin-left: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+header h1 {
+    color: white;
+    position: absolute; 
+    top: 27%;
+    left: 26%;
+    font-family: "Fraunces";
+    font-size: 3.5em;
+    letter-spacing: 13px;
+}
+img.arrow {
+    position: absolute;
+    top: 46%;
+    left: 49%;
+}
+img.full {
+    width: 100%;
+    height: 100%;
+}
+article.full {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+}
+article.full div {
+    display: grid;
+    justify-content: center;
+}
+article.full h2 {
+    color: hsl(212, 27%, 19%);
+    font-size: 2.8em;
+}
+article.full p {
+    color: hsl(232, 10%, 55%);
+    padding: 2em 0 3em;
+    font-size: 18px;
+}
+article.full span.learn-more a {
+    padding-left: 5px;
+    font-weight: 800;
+    color: hsl(212, 27%, 19%);
+    text-decoration: underline solid 3px;
+}
+article.transform span.learn-more a {
+    text-decoration-color: hsl(51, 100%, 85%);
+}
+article.stand-out span.learn-more a {
+    text-decoration-color: hsl(7, 100%, 88%);
+}
+.a-graphics, .a-photography {
+    position: relative;
+}
+div.on-image {
+    position: absolute;
+    top: 67%;
+    text-align: center;
+}
+div.on-image h2 {
+    font-size: 1.7em;
+}
+div.on-image p {
+    padding-top: 1.7em;
+    line-height: 1.5em;
+}
+div.graphics {
+    left: 26%;
+    color: hsl(167, 40%, 24%);
+}
+div.graphics p {
+    color: hsl(167, 37%, 32%);
+}
+div.photography {
+    right: 26%;
+    color: hsl(198, 62%, 26%);
+}
+div.photography p {
+    color: hsl(197, 62%, 30%);
+}
+section {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding:  10em;
+}
+section h3 {
+    grid-column: span 3;
+    justify-self: center;
+    padding-bottom: 4.2em;
+    letter-spacing: 7px;
+    color: hsl(210, 4%, 67%);
+}
+section div {
+    text-align: center;
+}
+section img {
+    width: 20%;
+    border-radius: 100%;
+}
+section div p {
+    color: hsl(213, 9%, 39%);
+    padding: 3em 0;
+    font-size: 18px;
+    line-height: 1.7em;
+}
+section span {
+    display: block;
+}
+section span.name {
+    font-size: 20px;
+    font-weight: 800;
+    color: hsl(212, 27%, 19%);
+    padding: 1em 0 0.5em;
+}
+section span.occupation {
+    color: hsl(210, 4%, 67%);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+.the-four {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+footer {
+    background-color: hsl(168, 79%, 74%);
+    padding: 4em;
+    grid-column: span 2;
+    display: grid;
+    justify-content: center;
+}
+footer img {
+    padding: 1em;
+}
+footer nav {
+    margin: 2.5em;
+}
+footer div {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-right: 3em;
+}
+footer div img {
+    width: 115%;
+}
+.bottom-nav {
+    display: grid;
+    justify-content: center;
+}
+.bottom-nav ul {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+.bottom-nav ul li {
+    color: hsl(167, 40%, 24%);
+    padding: 0 1.5em;
+    font-size: 18px;
+    font-weight: 600;
+}
+nav.socials {
+    display: grid;
+    justify-content: center;
+}
+nav.socials ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/*hover styles*/
+
+header nav li:hover {
+    cursor: pointer;
+    color: white;
+    background-color: skyblue;
+    border-radius: 40px;
+    padding: 20px 33px;
+    transition-duration: 0.1s;
+}
+article.full span.learn-more a:hover {
+    cursor: pointer;
+    text-decoration: underline solid 4px;
+    transition-duration: 0.1s;
+}
+article.transform span.learn-more a:hover {
+    text-decoration-color: hsl(51, 100%, 49%);
+}
+article.stand-out span.learn-more a:hover {
+    text-decoration-color: hsl(7, 99%, 70%);
+}
+.bottom-nav ul li:hover {
+    cursor: pointer;
+    color: white;
+    transition-duration: 0.1s;
+}
+
+
+
+/* responsive styles */
+
+
+@media screen and (min-width: 870px) {
+    .mobile {
+        display: none;
+    }
+}
+@media screen and (max-width: 870px) {
+    body {
+        max-width: 350px;
+        margin: 0 auto;
+        gap: 0;
+    }
+    .desktop {
+        display: none;
+    }
+    img.logo {
+        width: 35%;
+        position: absolute;
+        padding: 8%;
+    }
+    header h1 {
+        top: 25%;
+        left: 2%;
+        font-size: 2.5em;
+        text-align: center;
+        letter-spacing: 5px;
+    }
+    img.arrow {
+        top: 51%;
+        left: 46%;
+    }
+    article.full img {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+    article.full div {
+        grid-column: span 2;
+        padding: 4em 1.1em;
+        text-align: center;
+    }
+    article.full h2 {
+        font-size: 2em;
+    }
+    article.full div p {
+        padding: 1.2em 0 1.9em;
+    }
+    .a-graphics, .a-photography {
+        grid-column: span 2;
+    }
+    div.on-image h2 {
+        font-size: 1.7em;
+    }
+    div.on-image p {
+        font-size: 15.4px;
+        line-height: 1.7em;
+    }
+    div.graphics {
+        top: 65%;
+        left: 7%;
+    }    
+    div.photography {
+        top: 65%;
+        right: 5%;
+    }
+    section {
+        padding: 4em 0;
+    }
+    section h3 {
+        font-size: 1em;
+        padding-bottom: 2em;
+        letter-spacing: 4px;    
+    }
+    section div {
+        grid-column: span 3;
+        padding: 2em 0;
+    }
+    .the-four img {
+        grid-column: span 2;
+    }
+    /* header nav {
+        display: none;
+    }     */
+}
