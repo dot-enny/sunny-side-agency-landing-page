@@ -58,6 +58,12 @@ nav li.contact {
     font-weight: 700;
     text-transform: uppercase;
 }
+#burger {
+    padding: 18px;
+}
+#menu {
+    display: none;
+}
 header h1 {
     color: white;
     position: absolute; 
@@ -255,7 +261,7 @@ article.stand-out span.learn-more a:hover {
     color: white;
     transition-duration: 0.1s;
 }
-
+ 
 
 
 /* responsive styles */
