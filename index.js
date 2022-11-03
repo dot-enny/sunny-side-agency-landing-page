@@ -5,6 +5,7 @@ const arrow = document.querySelector('.arrow')
 
 
 burger.addEventListener ('click', () => {
+    burger.classList.toggle('opac')
     menu.classList.toggle('hidden');
     h1.classList.toggle('hidden');
     arrow.classList.toggle('hidden');

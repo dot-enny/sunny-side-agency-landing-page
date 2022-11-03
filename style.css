@@ -284,10 +284,12 @@ article.stand-out span.learn-more a:hover {
     .hidden {
         display: none;
     }
-    
     #burger {
         padding: 1.5em 1em;
         margin-left: 16em;
+    }
+    #burger.opac {
+        opacity: 0.5;
     }
     #menu {
         background-color: white;
@@ -297,8 +299,6 @@ article.stand-out span.learn-more a:hover {
         margin-top: 1em;
         font-weight: 600;
         text-align: center;
-        transition: all;
-        transition-duration: 2s;
     }    
     #menu li {
         margin-block: 1.6em;
