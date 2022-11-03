@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 nav li.contact, h1, h2, h3, span.name, article.full span.learn-more {
     font-family: "Fraunces", serif;
@@ -30,9 +31,9 @@ header {
 img.logo {
     position: absolute;
     padding: 3.7%;
-    width: 13%;
+    width: 18%;
 }
-header nav {
+nav {
     position: absolute;
     right: 0.1%;
     padding: 2%;
@@ -40,7 +41,7 @@ header nav {
 ul {
     list-style-type: none;
 }
-header nav li {
+nav.desktop li {
     color: white;
     display: inline-block;
     padding: 2em;
@@ -49,7 +50,7 @@ header nav li {
     font-weight: 600;
     letter-spacing: 0.5px;
 }
-nav li.contact {
+nav.desktop li.contact {
     color: hsl(212, 27%, 19%);
     background-color: white;
     border-radius: 40px;
@@ -57,12 +58,6 @@ nav li.contact {
     margin-left: 3px;
     font-weight: 700;
     text-transform: uppercase;
-}
-#burger {
-    padding: 18px;
-}
-#menu {
-    display: none;
 }
 header h1 {
     color: white;
@@ -237,7 +232,7 @@ nav.socials ul {
 
 /*hover styles*/
 
-header nav li:hover {
+nav.desktop li:hover {
     cursor: pointer;
     color: white;
     background-color: skyblue;
@@ -267,12 +262,12 @@ article.stand-out span.learn-more a:hover {
 /* responsive styles */
 
 
-@media screen and (min-width: 870px) {
+@media screen and (min-width: 1000px) {
     .mobile {
         display: none;
     }
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1000px) {
     body {
         max-width: 350px;
         margin: 0 auto;
@@ -282,9 +277,36 @@ article.stand-out span.learn-more a:hover {
         display: none;
     }
     img.logo {
-        width: 35%;
+        width: 48%;
         position: absolute;
         padding: 8%;
+    }
+    .hidden {
+        display: none;
+    }
+    
+    #burger {
+        padding: 1.5em 1em;
+        margin-left: 16em;
+    }
+    #menu {
+        background-color: white;
+        color: hsl(232, 10%, 55%);
+        padding: 1.5em 5em;
+        margin-right: 0.8em;
+        margin-top: 1em;
+        font-weight: 600;
+        text-align: center;
+    }    
+    #menu li {
+        margin-block: 1.6em;
+    }
+    #menu li.contact {
+        background-color: hsl(51, 100%, 49%);
+        padding: 1em 1.4em;
+        color: hsl(199, 62%, 16%);
+        text-transform: uppercase;
+        border-radius: 100vmax;
     }
     header h1 {
         top: 25%;
