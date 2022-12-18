@@ -33,7 +33,7 @@ img.logo {
     padding: 3.7%;
     width: 18%;
 }
-nav {
+nav.desktop, nav.mobile {
     position: absolute;
     right: 0.1%;
     padding: 2%;
@@ -262,12 +262,12 @@ article.stand-out span.learn-more a:hover {
 /* responsive styles */
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1201px) {
     .mobile {
         display: none;
     }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     body {
         max-width: 350px;
         margin: 0 auto;
@@ -287,6 +287,7 @@ article.stand-out span.learn-more a:hover {
     #burger {
         padding: 1.5em 1em;
         margin-left: 16em;
+        cursor: pointer;
     }
     #burger.opac {
         opacity: 0.5;
@@ -302,6 +303,7 @@ article.stand-out span.learn-more a:hover {
     }    
     #menu li {
         margin-block: 1.6em;
+        cursor: pointer;
     }
     #menu li.contact {
         background-color: hsl(51, 100%, 49%);
