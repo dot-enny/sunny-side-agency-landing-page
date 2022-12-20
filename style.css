@@ -20,22 +20,34 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
-    position: relative;
     background-color: white;
 }
 header {
+    background: url(images/desktop/image-header.jpg) no-repeat center;
     grid-column: span 2;
-    background-size: 100%;
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4.5fr;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* position: relative; */
 }
+header > div {
+    grid-column: span 2;
+    display: grid;
+    justify-content: center;
+}
+
 img.logo {
-    position: absolute;
     padding: 3.7%;
-    width: 18%;
 }
-nav.desktop, nav.mobile {
+nav.desktop {
+    padding: 2%;
+}
+nav.mobile {
     position: absolute;
-    right: 0.1%;
     padding: 2%;
 }
 ul {
@@ -59,19 +71,16 @@ nav.desktop li.contact {
     font-weight: 700;
     text-transform: uppercase;
 }
-header h1 {
+.header-title {
     color: white;
-    position: absolute; 
-    top: 27%;
-    left: 26%;
     font-family: "Fraunces";
     font-size: 3.5em;
     letter-spacing: 13px;
+    margin-top: -2em;
 }
 img.arrow {
-    position: absolute;
-    top: 46%;
-    left: 49%;
+    justify-self: center;
+    margin-bottom: 2em;
 }
 img.full {
     width: 100%;
@@ -109,12 +118,17 @@ article.transform span.learn-more a {
 article.stand-out span.learn-more a {
     text-decoration-color: hsl(7, 100%, 88%);
 }
-.a-graphics, .a-photography {
-    position: relative;
+.a-graphics {
+    background: url(images/desktop/image-graphic-design.jpg) center no-repeat;
+    background-size: cover;
+    padding: 26em 0 4em;
+}
+.a-photography {
+    background: url(images/desktop/image-photography.jpg) center no-repeat;
+    background-size: cover;
+    padding: 26em 0 4em;
 }
 div.on-image {
-    position: absolute;
-    top: 67%;
     text-align: center;
 }
 div.on-image h2 {
@@ -125,14 +139,12 @@ div.on-image p {
     line-height: 1.5em;
 }
 div.graphics {
-    left: 26%;
     color: hsl(167, 40%, 24%);
 }
 div.graphics p {
     color: hsl(167, 37%, 32%);
 }
 div.photography {
-    right: 26%;
     color: hsl(198, 62%, 26%);
 }
 div.photography p {
@@ -237,7 +249,7 @@ nav.desktop li:hover {
     color: white;
     background-color: skyblue;
     border-radius: 40px;
-    padding: 20px 33px;
+    padding: 1.2em 2em;
     transition-duration: 0.1s;
 }
 article.full span.learn-more a:hover {
@@ -262,32 +274,48 @@ article.stand-out span.learn-more a:hover {
 /* responsive styles */
 
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1001px) {
     .mobile {
         display: none;
     }
 }
-@media screen and (max-width: 1200px) {
-    body {
-        max-width: 350px;
-        margin: 0 auto;
-        gap: 0;
-    }
+@media screen and (max-width: 1000px) {
     .desktop {
         display: none;
-    }
-    img.logo {
-        width: 48%;
-        position: absolute;
-        padding: 8%;
     }
     .hidden {
         display: none;
     }
+    body {
+        max-width: 350px;
+        margin: 0 auto;
+        gap: 0;
+        box-shadow: hsl(0, 0%, 90%) 1px 1px 5px 5px;
+    }
+    header {
+        background: url(images/mobile/image-header.jpg) center no-repeat;
+        background-size: cover;
+        grid-template-rows: 1fr 8fr;
+        transition: all ease-in 0.5s;
+    }
+    .header-title {
+        font-size: 2.5em;
+        letter-spacing: 0.2em;
+        margin-top: -0.8em;
+    }
+    img.logo {
+        margin: 12% 0 0 12%;
+    }
+    img.arrow {
+        margin-top: 3em;
+    }
     #burger {
-        padding: 1.5em 1em;
-        margin-left: 16em;
+        padding-block: 1em 0.9em;
+        padding-inline-end: 1.5em;
         cursor: pointer;
+        justify-self: end;
+        align-self: end;
+        
     }
     #burger.opac {
         opacity: 0.5;
@@ -296,8 +324,7 @@ article.stand-out span.learn-more a:hover {
         background-color: white;
         color: hsl(232, 10%, 55%);
         padding: 1.5em 5em;
-        margin-right: 0.8em;
-        margin-top: 1em;
+        margin-left: 1em;
         font-weight: 600;
         text-align: center;
     }    
@@ -338,7 +365,14 @@ article.stand-out span.learn-more a:hover {
     article.full div p {
         padding: 1.2em 0 1.9em;
     }
-    .a-graphics, .a-photography {
+    .a-graphics {
+        background: url(images/mobile/image-graphic-design.jpg) no-repeat center;
+        background-size: cover;
+        grid-column: span 2;
+    }
+    .a-photography {
+        background: url(/images/mobile/image-photography.jpg) no-repeat center;
+        background-size: cover;
         grid-column: span 2;
     }
     div.on-image h2 {
@@ -347,14 +381,6 @@ article.stand-out span.learn-more a:hover {
     div.on-image p {
         font-size: 15.4px;
         line-height: 1.7em;
-    }
-    div.graphics {
-        top: 65%;
-        left: 7%;
-    }    
-    div.photography {
-        top: 65%;
-        right: 5%;
     }
     section {
         padding: 4em 0;
