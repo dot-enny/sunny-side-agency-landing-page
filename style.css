@@ -294,7 +294,6 @@ article.stand-out span.learn-more a:hover {
         background: url(images/mobile/image-header.jpg) center no-repeat;
         background-size: cover;
         grid-template-rows: 1fr 8fr;
-        transition: all ease-in 0.5s;
     }
     .header-title {
         font-size: 2.5em;
@@ -331,7 +330,12 @@ article.stand-out span.learn-more a:hover {
         text-align: center;
         padding: 2em 0;
         width: 80%;
+        transition: all ease 0.28s;
     }    
+    .menu-in {
+        transform: scale(0);
+        translate: 0 500px 0;
+    }
     #menu li {
         margin: 2em auto;
         cursor: pointer;
