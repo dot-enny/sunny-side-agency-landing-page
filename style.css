@@ -20,7 +20,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
-    background-color: white;
 }
 header {
     background: url(images/desktop/image-header.jpg) no-repeat center;
@@ -32,7 +31,6 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* position: relative; */
 }
 header > div {
     grid-column: span 2;
@@ -280,7 +278,9 @@ article.stand-out span.learn-more a:hover {
         display: none;
     }
     .hidden {
-        display: none;
+        /* display: none; */
+        transform: scale(0);
+        translate: 0 500px 0;
     }
     body {
         max-width: 475px;
@@ -299,12 +299,14 @@ article.stand-out span.learn-more a:hover {
         font-size: 2.5em;
         letter-spacing: 0.2em;
         margin-top: -0.8em;
+        transition: transform ease 0.5s;
     }
     img.logo {
         margin: 12% 0 0 12%;
     }
     img.arrow {
         margin-top: 3em;
+        transition: all ease 0.5s;
     }
     nav.mobile {
         position: absolute;
@@ -318,6 +320,7 @@ article.stand-out span.learn-more a:hover {
         cursor: pointer;
         justify-self: end;
         align-self: end;
+        transition: opacity 0.5s;
         
     }
     #burger.opac {
@@ -330,7 +333,7 @@ article.stand-out span.learn-more a:hover {
         text-align: center;
         padding: 2em 0;
         width: 80%;
-        transition: all ease 0.28s;
+        transition: all ease 0.3s;
     }    
     .menu-in {
         transform: scale(0);
